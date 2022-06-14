@@ -1,0 +1,160 @@
+/* ======== BUTTONS ======== */
+
+.buttons {
+	background-color: var(--bg-accented);
+	padding: 10px 0;
+}
+
+.keys,
+.min-maj {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-accented);
+}
+
+.keys ul,
+.min-maj ul {
+	padding: 0;
+	margin: 5px 0px;
+}
+
+.keys li,
+.min-maj li {
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+}
+
+.btn {
+	outline: none;
+	height: 40px;
+	width: 60px;
+	text-align: center;
+	background: var(--bg);
+	border: 1px solid var(--text-main-color);
+	color: var(--text-main-color);
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.min-maj .btn {
+	width: 100px;
+}
+
+.keys .btn:hover,
+.min-maj .btn:hover {
+	color: var(--text-on-dark-color);
+	background-color: var(--accent-color);
+}
+
+.btn.selected {
+	color: var(--text-on-dark-color);
+	background-color: var(--accent-color);
+}
+
+/* ======== TEXT ======== */
+
+.keys figcaption,
+.min-maj figcaption {
+	font-size: 1.5rem;
+	color: var(--text-main-color);
+}
+
+h2 {
+	font-size: 5em;
+	margin: 150px 10% 50px 10%;
+	font-weight: 600;
+	color: var(--text-main-color);
+	text-align: center;
+}
+
+.em {
+	background-image: url("../images/em-yellow.svg");
+	background-position: 0 80%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: -20px -32px -13px -16px;
+	padding: 20px 32px 13px 16px;
+}
+/* ======== PIANO ======== */
+
+.pianos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	margin: 3% 1%;
+	background-color: var(--bg);
+}
+
+.piano-keys {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+
+.whites,
+.blacks {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.blacks {
+	margin-top: -100px;
+	margin-left: 10px;
+}
+
+.black:nth-child(3) {
+	margin-left: 20px;
+}
+
+.octave {
+	margin: 0;
+	padding: 0;
+	width: 140px;
+	height: 100px;
+}
+
+.white {
+	background-color: white;
+	width: 20px;
+	height: 100px;
+	outline: 1px solid black;
+}
+
+.black {
+	background-color: black;
+	margin: 0px 1px;
+	width: 18px;
+	height: 60px;
+	z-index: 2;
+}
+
+.white.active,
+.black.active {
+	background-color: var(--accent-color);
+}
+
+audio {
+	display: block;
+	margin: 0 auto 20px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+	border-radius: 50px;
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: var(--bg-accented);
+}
+
+/* ======== RESPONSIVENESS ======== */
+
+@media (max-width: 740px) {
+	h2 {
+		font-size: 4em;
+	}
+}

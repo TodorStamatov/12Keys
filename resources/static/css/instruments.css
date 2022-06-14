@@ -1,0 +1,33 @@
+/* ======== CARDS ======== */
+
+.cards {
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+	background-color: var(--bg-color);
+}
+
+img {
+	height: 150px;
+	width: 150px;
+}
+
+/* ======== TEXT ======== */
+
+h2 {
+	color: var(--text-main-color);
+	font-size: 5em;
+	font-weight: 600;
+	margin: 150px 0 0 0;
+	background-color: var(--bg-color);
+	text-align: center;
+}
+
+.em {
+	background-image: url("../images/em-primary.svg");
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: -20px -32px -13px -16px;
+	padding: 20px 32px 13px 16px;
+}
