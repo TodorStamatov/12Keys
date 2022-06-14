@@ -14,7 +14,6 @@ can add new songs to the database. When the user chooses a song, the song lyrics
 title, author, tempo, key, time signature and youtube video. Above the text are the chords of the song which can be transposed dynamically in any key. Furthermore, 
 the user can hide and display chords as well as can learn the chords used in the song since they are extracted from the lyrics autmatically and linked to the chords visualizer.
 
-Basic user authentication and authorization is developed. 
+Basic user authentication and authorization are developed. User details are checked in the databese before registration and log in and access to the pages is controlled, too.  
 
-### Development languages used
 The application is developed using PHP as backend and plain HTML, CSS and JavaScript for the frontend. The database is MySQL.
